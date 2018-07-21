@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Paness-iiht Student Attendance App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/knockout-3.4.2.js"></script>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>Paness-iiht Student Attendance App</h1>
+
+
+        <table>
+        <thead >
+
+            <th class="name-col">Students name</th>
+            <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th>
+            <th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th>
+            <th class="missed-col">Days Missed-col</th>
+
+        </thead>
+        
+        <tbody data-bind="foreach:students">
+            <tr>
+                <td class="name-col" data-bind="text: name"></td>
+                <td class="attend-col"><input type="checkbox" data-bind= 'checked: ch' value="0" /></td>
+                <td class="attend-col"><input type="checkbox" data-bind= 'checked: ch' value="1"  /></td>
+                <td class="attend-col"><input type="checkbox" data-bind= 'checked: ch' value="2"  /></td>
+                <td class="attend-col"><input type="checkbox" data-bind= 'checked: ch' value="3"  /></td>
+                <td class="attend-col"><input type="checkbox" data-bind= 'checked: ch' value="4"  /></td>
+                <td class="attend-col"><input type="checkbox" data-bind= 'checked: ch' value="5"  /></td>
+                <td class="attend-col"><input type="checkbox" data-bind= 'checked: ch' value="6" /></td>
+                <td class="attend-col"><input type="checkbox" data-bind= 'checked: ch' value="7" /></td>
+                <td class="attend-col"><input type="checkbox" data-bind= 'checked: ch' value="8" /></td>
+                <td class="attend-col"><input type="checkbox" data-bind= 'checked: ch' value="9" /></td>
+                <td class="attend-col"><input type="checkbox" data-bind= 'checked: ch' value="10" /></td>
+                <td class="attend-col"><input type="checkbox" data-bind= 'checked: ch' value="11" /></td>
+                <td class="missed-col" data-bind="text: missed"></td>
+            </tr>
+
+        </tbody>
+    </table>
+        <script src="attendance_ko.js"></script>
+    </body>
+</html>
+
